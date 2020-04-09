@@ -1,0 +1,28 @@
+section.form
+  form(action='', onsubmit="return validateform()").contact
+    .leftside
+
+      input#fname(type='text', name='firstname', placeholder='Ad') 
+    
+      input#lname(type='text', name='lastname', placeholder='Soyad')
+
+      input#email(type='email', name='email', placeholder='Email')
+
+      input#phone(type='tel', name='phone', placeholder='Telefon')
+      input.send-btn(type='submit', value='GÖNDƏR')
+    .rightside
+      textarea#subject(name='subject', placeholder='Mesaj') 
+    .info
+      a(href="").showicon1
+        img(src="img/icon/sarikonum.png", alt="", srcset="").sarikonum
+        img(src="img/icon/qarakonum.png", alt="", srcset="").qarakonum
+        | Bakı ş.,H.Aliyev pr.
+      a(href="").info-middile-text.showicon2
+        img(src="img/icon/phone-black.png", alt="", srcset="").phone-black
+        img(src="img/icon/phone-yellow.png", alt="", srcset="").phone-yellow
+        | 050 256 00 06   
+      a(href="").showicon3  
+        img(src="img/icon/mail-black.png", alt="", srcset="").mail-black
+        img(src="img/icon/mail-yellow.png", alt="", srcset="").mail-yellow
+        | info@hydra.az
+  .back-image

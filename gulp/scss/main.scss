@@ -1,0 +1,35 @@
+//base
+@import './base/mixins';
+@import './base/variables';
+@import './base/base';
+@import './components/fonts';
+
+
+//components
+
+
+@import './components/header';
+@import './components/about-page';
+@import './components/footer';
+
+// mehsullar
+
+
+@import './mehsullar/content';
+
+//media 
+@import './media/media';
+
+//contact
+
+@import './contact/form';
+
+//anasehife
+
+@import './anasehife/maincontent';
+@import './anasehife/btn-animation';
+
+iframe{
+    width: 100%;
+    height: 155px;
+}

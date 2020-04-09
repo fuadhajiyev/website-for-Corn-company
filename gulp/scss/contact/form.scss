@@ -1,0 +1,215 @@
+.contact {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rightside {
+    width: calc(50% - 25px);
+    margin-left: 25px;
+}
+
+textarea {
+    width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    background-color: transparent;
+    color: $or-color;
+    border-color: $white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+input {
+    background-color: transparent;
+    color: $or-color;
+    border: 1px solid $white;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+input:last-child {
+    margin-bottom: 0;
+}
+
+.form {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+
+    a {
+        text-decoration: none;
+        border: 1px solid $white;
+        padding: 10px;
+        flex-grow: 1;
+        color: $or-color;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .1s linear;
+
+
+        img {
+            width: 15px;
+            font-size: 18px;
+            margin-right: 12px;
+
+
+        }
+    }
+
+    .info-middile-text {
+        border-right: none;
+        border-left: none;
+        background-color: $or-color;
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+
+
+
+.send-btn {
+    color: $or-color;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $or-color;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $or-color;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $or-color;
+}
+
+
+//============== icon hover=============
+.qarakonum{
+    display: none;
+}
+.phone-yellow{
+    display: none;
+}
+.mail-black{
+    display: none;
+}
+
+// ============showicon1================
+.showicon1:hover .qarakonum { 
+    display: block;
+}
+
+.showicon1:hover .sarikonum {  
+    display: none;
+}
+
+.showicon1:hover{
+    background-color: $or-color;
+    color: #000;
+}
+
+// ============showicon2================
+.showicon2:hover .phone-yellow { 
+    display: block;
+}
+
+.showicon2:hover .phone-black {  
+    display: none;
+}
+
+.showicon2:hover{
+    background-color: #000;
+    color: $or-color;
+}
+
+//============ showicon3 ==================
+
+.showicon3:hover .mail-black {  
+    display: block;
+}
+.showicon3:hover .mail-yellow {  
+    display: none;
+}
+
+
+.showicon3:hover{
+    background-color: $or-color;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .contact {
+
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+
+    }
+
+    .rightside {
+        margin-top: 25px;
+        margin-left: 0;
+        width: 80%;
+
+    }
+
+    .leftside {
+
+        width: 80%;
+
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+    }
+}

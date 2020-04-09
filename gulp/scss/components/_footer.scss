@@ -1,0 +1,38 @@
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1D1D1B;
+    padding: 0 15px;
+    font-family: "SanFrancisco";
+    font-weight: 400;
+
+
+    .author{
+        float: left;
+        p{
+            color:$white;
+            font-size: 14px;
+            margin: 0;
+            font-weight: lighter;
+        }
+    }
+
+    .corn-logo{
+        float: right;
+        a{
+            img{
+                width: 45px;
+            }
+        }         
+    }
+}
+
+@media (max-width: 991px) { 
+footer{
+    bottom: inherit;
+}
+
+}
+

@@ -1,0 +1,117 @@
+.mainpage {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/03.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.black-cover {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    opacity: .6;
+    z-index: -1;
+}
+
+.center-content {
+
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .center-text {
+        color: $white;
+        text-transform: uppercase;
+        padding: 10px 20px;
+
+
+    }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+
+        img {
+            width: 250px;
+        }
+    }
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 24px;
+    width: 100%;
+
+
+    .my-btn {
+        width: 49.5%;
+        text-align: center;
+        background-color: rgba(246, 168, 0, 0.651);
+        color: $white;
+        cursor: pointer;
+
+        h2 {
+            font-weight: lighter;
+            text-transform: uppercase;
+            line-height: 80px;
+            margin: 0;
+        }
+
+    }
+
+}
+
+@media (max-width: 991px) {
+    .footer-btn {
+        position: unset;
+    }
+}
+
+
+@media (max-width: 632px) {
+
+
+    .footer-btn {
+        position: unset;
+        flex-direction: column;
+    }
+
+    .my-btn {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .my-btn:last-child {
+        margin: 0;
+    }
+
+
+    .center-img {
+
+
+        img {
+            width: 200px !important;
+        }
+    }
+
+    .my-btn {
+
+        h2 {
+
+            line-height: 40px !important;
+        
+        }
+
+    }
+
+}

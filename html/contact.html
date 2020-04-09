@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0"><a class="navbar-brand mb-3" href="#"> <img class="logo" src="img/logo1x.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Haqqımızda <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Məhsullarımız</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item nav-link" href="#">Xəbərlər</a><a class="dropdown-item nav-link" href="#">Video</a></div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Əlaqə</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="langs">
+              <select>
+                <option value="0">AZ</option>
+                <option value="1">RU</option>
+                <option value="2">EN</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <section class="form">
+      <form class="contact" action="" onsubmit="return validateform()">
+        <div class="leftside">
+          <input id="fname" type="text" name="firstname" placeholder="Ad">
+          <input id="lname" type="text" name="lastname" placeholder="Soyad">
+          <input id="email" type="email" name="email" placeholder="Email">
+          <input id="phone" type="tel" name="phone" placeholder="Telefon">
+          <input class="send-btn" type="submit" value="GÖNDƏR">
+        </div>
+        <div class="rightside">
+          <textarea id="subject" name="subject" placeholder="Mesaj"> </textarea>
+        </div>
+        <div class="info"><a class="showicon1" href=""><img class="sarikonum" src="img/icon/sarikonum.png" alt="" srcset=""><img class="qarakonum" src="img/icon/qarakonum.png" alt="" srcset="">Bakı ş.,H.Aliyev pr.</a><a class="info-middile-text showicon2" href=""><img class="phone-black" src="img/icon/phone-black.png" alt="" srcset=""><img class="phone-yellow" src="img/icon/phone-yellow.png" alt="" srcset="">050 256 00 06   </a><a class="showicon3" href=""> <img class="mail-black" src="img/icon/mail-black.png" alt="" srcset=""><img class="mail-yellow" src="img/icon/mail-yellow.png" alt="" srcset="">info@hydra.az</a></div>
+      </form>
+      <div class="back-image"></div>
+    </section>
+    <footer>
+      <div class="author">
+        <p>© Bütün hüquqlar qorunur | 2020</p>
+      </div>
+      <div class="corn-logo"><a href="http://corn.az/en" target="_blank"><img class="corn" src="img/cornwhite.png" alt=""></a></div>
+    </footer>
+    <script src="bootstrap4/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap4/js/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <script src="js/option.js"></script>
+  </body>
+</html>
